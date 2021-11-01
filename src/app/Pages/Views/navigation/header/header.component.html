@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+  <div fxHide.gt-xs>
+      <button mat-icon-button (click)="onToggleSidenav()">
+          <mat-icon>menu</mat-icon>
+      </button>
+  </div>
+  <div>
+      <a routerLink="/home">Covid 19 Test Management System</a>
+  </div>
+    <mat-nav-list class="tab">
+    <a mat-list-item class="headertab" routerLink="/admin"> Administration </a>
+    <a mat-list-item class="headertab" routerLink="/booking"> Booking </a>
+     <a mat-list-item class="headertab" routerLink="/reporting"> Reporting </a>
+    </mat-nav-list>
+</mat-toolbar>
